@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { base44 } from "@/api/base44Client";
+import { base44 } from "@------t";
 import PageHeader from "../components/shared/PageHeader";
 import { CalendarCheck, MapPin, Flag, UserPlus, Check, ChevronRight, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -50,7 +50,7 @@ export default function Trial() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await base44.entities.Contact.create({
+    await ------.entities.Contact.create({
       ...form,
       inquiry_type: "体験予約",
     });
