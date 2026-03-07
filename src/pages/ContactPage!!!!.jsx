@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { base44 } from "@/api/base44Client";
+import { base44 } from "@/------t";
 import PageHeader from "../components/shared/PageHeader";
 import { Check, ChevronRight, Loader2, MapPin, Clock, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -23,7 +23,7 @@ export default function ContactPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await base44.entities.Contact.create(form);
+    await ------.entities.Contact.create(form);
     setIsSubmitting(false);
     setIsSubmitted(true);
     toast.success("お問い合わせを受け付けました！");
